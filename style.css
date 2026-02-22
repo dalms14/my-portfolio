@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/*This is the Navigation Bar Section*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8fbff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #f8fbff;
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a2a40;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+nav ul li a.active {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+.section-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*This is the Hero Section*/
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+.hero-content {
+    max-width: 600px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    border-color: #007bff;
+    cursor: pointer;
+}
+
+img {
+    max-width: 430px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*This is the About me Section*/
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #ffffff;
+    align-items: center;
+    max-width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+#about h2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #1a2a40;
+    margin-bottom: 40px;
+}
+
+#about h2::before,
+#about h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 0 20px;
+}
+
+li{
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.about-text-box{
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 20px;
+    flex: 2;
+
+}
+
+.about-text-box li {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #333;
+    width: 100%;
+}
+
+.about-image-box {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.about-image-box img{
+    width: 100%;
+    max-width: 430px; /* Matching your current progress */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-image-box img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 86, 179, 0.15);
+}
+.about-image-box img, .project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-image-box img:hover, .project-card:hover {
+    transform: translateY(-10px); /* This is the "Slide Up" move */
+    box-shadow: 0 20px 40px rgba(0, 86, 179, 0.15);
+}
+
+
+.about-layout-grid {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.about-text-box { flex: 1; }
+.about-image-box { flex: 1; text-align: right; }
+
+/*This is the end of the about section and the start of the projects section*/
+.projects-container {
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f8fbff;
+    align-items: center;
+    max-width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    
+}
+
+.projects-layout-grid {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #1a2a40;
+    margin: 40px 0;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1; 
+    height: 1px;
+    background: #e0e0e0; 
+    margin: 0 20px; 
+}
+
+/* Center the container on the page */
+.project-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 800px; /* Adjust based on how wide you want it */
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    
+    /* This creates that soft shadowy effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    
+    /* Smooth transition for when we add the hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.system-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    color: #1a2a40;
+    margin-bottom: 15px;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    text-align: start;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 86, 179, 0.15);
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    border-color: #007bff;
+    cursor: pointer;
+    text-align: start;
+}
