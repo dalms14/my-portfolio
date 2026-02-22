@@ -92,6 +92,10 @@ img {
     max-width: 430px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /*This is the About me Section*/
@@ -108,6 +112,7 @@ img {
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 20px;
+    animation: fadeInUp 1.2s ease-out forwards;
 }
 
 #about h2 {
@@ -162,6 +167,7 @@ li{
     max-width: 430px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-out forwards;
 }
 .about-image-box img:hover {
     transform: translateY(-10px);
@@ -169,6 +175,7 @@ li{
 }
 .about-image-box img, .project-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1.2s ease-out forwards;
 }
 .about-image-box img:hover, .project-card:hover {
     transform: translateY(-10px);
@@ -225,7 +232,6 @@ li{
     margin: 0 20px; 
 }
 
-/* Center the container on the page */
 .project-container {
     display: flex;
     justify-content: center;
@@ -235,15 +241,12 @@ li{
 .project-card {
     background: #ffffff;
     width: 100%;
-    max-width: 800px; /* Adjust based on how wide you want it */
+    max-width: 800px;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
     
-    /* This creates that soft shadowy effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    
-    /* Smooth transition for when we add the hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -265,6 +268,7 @@ li{
     max-width: 600px;
     margin: 0 auto 25px auto;
     text-align: start;
+
 }
 
 .project-card:hover {
@@ -315,6 +319,7 @@ li{
     .hero-image img {
         margin-top: 30px;
         max-width: 100%; 
+        animation: fadeInUp 1.2s ease-out forwards;
     }
 
     
@@ -336,5 +341,15 @@ li{
     .about-image-box {
         margin-top: 20px;
         justify-content: center;
+    }
+}
+    @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
