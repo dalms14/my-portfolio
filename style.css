@@ -159,7 +159,7 @@ li{
 
 .about-image-box img{
     width: 100%;
-    max-width: 430px; /* Matching your current progress */
+    max-width: 430px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -171,7 +171,7 @@ li{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .about-image-box img:hover, .project-card:hover {
-    transform: translateY(-10px); /* This is the "Slide Up" move */
+    transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 86, 179, 0.15);
 }
 
@@ -186,7 +186,7 @@ li{
 .about-text-box { flex: 1; }
 .about-image-box { flex: 1; text-align: right; }
 
-/*This is the end of the about section and the start of the projects section*/
+
 .projects-container {
     margin: 0 auto;
     padding: 0 20px;
@@ -283,4 +283,58 @@ li{
     border-color: #007bff;
     cursor: pointer;
     text-align: start;
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem; 
+    }
+
+    .hero-image img {
+        margin-top: 30px;
+        max-width: 100%; 
+    }
+
+    
+    .about-container {
+        flex-direction: column;
+        width: 95%; 
+        padding: 20px;
+    }
+
+    .about-layout-grid {
+        flex-direction: column;
+    }
+
+    .about-text-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about-image-box {
+        margin-top: 20px;
+        justify-content: center;
+    }
 }
